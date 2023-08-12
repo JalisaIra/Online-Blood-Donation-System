@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="906b5dd93fb445869d931468dac56241" Name="Diagram1" ZoomLevel="80">
+        <EntityTypeShape EntityType="AA_BDModel.BloodBankTable" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AA_BDModel.BloodGroupTable" Width="1.5" PointX="7.125" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AA_BDModel.CityTable" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AA_BDModel.DonorTable" Width="1.5" PointX="5.125" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="AA_BDModel.Gender" Width="1.5" PointX="5.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AA_BDModel.HospitalTable" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AA_BDModel.RequestTypeTable" Width="1.5" PointX="14.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AA_BDModel.SeekerTable" Width="1.5" PointX="10" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="AA_BDModel.FK_BloodBankTable_CityTable" ManuallyRouted="false" />
+        <AssociationConnector Association="AA_BDModel.FK_DonorTable_BloodGroupTable" ManuallyRouted="false" />
+        <AssociationConnector Association="AA_BDModel.FK_SeekerTable_BloodGroupTable" ManuallyRouted="false" />
+        <AssociationConnector Association="AA_BDModel.FK_DonorTable_CityTable" ManuallyRouted="false" />
+        <AssociationConnector Association="AA_BDModel.FK_HospitalTable_CityTable" ManuallyRouted="false" />
+        <AssociationConnector Association="AA_BDModel.FK_SeekerTable_CityTable" ManuallyRouted="false" />
+        <AssociationConnector Association="AA_BDModel.FK_SeekerTable_Gender" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AA_BDModel.AccountStatusTable" Width="1.5" PointX="8.375" PointY="11.875" />
+        <EntityTypeShape EntityType="AA_BDModel.UserTable" Width="1.5" PointX="10.625" PointY="11" />
+        <EntityTypeShape EntityType="AA_BDModel.UserTypeTable" Width="1.5" PointX="8.375" PointY="15.75" />
+        <AssociationConnector Association="AA_BDModel.FK_UserTable_AccountStatusTable" />
+        <AssociationConnector Association="AA_BDModel.FK_BloodBankTable_UserTable" />
+        <AssociationConnector Association="AA_BDModel.FK_DonorTable_UserTable" />
+        <AssociationConnector Association="AA_BDModel.FK_HospitalTable_UserTable" />
+        <AssociationConnector Association="AA_BDModel.FK_SeekerTable_UserTable" />
+        <AssociationConnector Association="AA_BDModel.FK_UserTable_UserTypeTable" />
+        <EntityTypeShape EntityType="AA_BDModel.BloodStockDetail" Width="2.125" PointX="11.75" PointY="6" />
+        <EntityTypeShape EntityType="AA_BDModel.CampaignTable" Width="2.125" PointX="4.75" PointY="0.5" />
+        <AssociationConnector Association="AA_BDModel.FK_CampaignTable_BloodBankTable" />
+        <AssociationConnector Association="AA_BDModel.FK_BloodStockDetails_BloodGroupTable" />
+        <AssociationConnector Association="AA_BDModel.FK_BloodStockDetails_CampaignTable" />
+        <AssociationConnector Association="AA_BDModel.FK_BloodStockDetails_DonorTable" />
+        <EntityTypeShape EntityType="AA_BDModel.AcceptedTypeTable" Width="1.5" PointX="17" PointY="5.125" />
+        <EntityTypeShape EntityType="AA_BDModel.RequestStatusTable" Width="1.5" PointX="19.625" PointY="5.25" />
+        <EntityTypeShape EntityType="AA_BDModel.BloodBankStockTable" Width="1.5" PointX="9.375" PointY="2.375" />
+        <AssociationConnector Association="AA_BDModel.FK_BloodBankStockTable_BloodGroupTable" />
+        <AssociationConnector Association="AA_BDModel.FK_BloodStockDetails_BloodBankStockTable" />
+        <AssociationConnector Association="AA_BDModel.FK_BloodBankStockTable_BloodBankTable" />
+        <EntityTypeShape EntityType="AA_BDModel.RequestTable" Width="1.5" PointX="21.75" PointY="2.375" />
+        <AssociationConnector Association="AA_BDModel.FK_RequestTable_AcceptedTypeTable" />
+        <AssociationConnector Association="AA_BDModel.FK_RequestTable_RequestStatusTable" />
+        <AssociationConnector Association="AA_BDModel.FK_RequestTable_RequestTypeTable" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
